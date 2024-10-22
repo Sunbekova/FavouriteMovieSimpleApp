@@ -11,7 +11,7 @@ this app features a user-friendly interface that showcases a list of movies in a
 |----------------------------------|--------------------------------|
 | Programming Language:            | Swift                          |
 | Frameworks:                      | UIKit for the user interface   |
-| View:                            | UITableView                    |
+| Layout:                          | UITableView                    |
 
 
 # Key Features:
@@ -28,11 +28,7 @@ Movie List Display:
 
 https://github.com/user-attachments/assets/694d8b49-0546-4485-9418-ebf2a8df5fdc
 
-
-
-
-
-# Project Members
+# App Creator
 | Full Name | ID |
 |------------|-------------|
 |  Suanbekova Aisha  | 22B030589    |
