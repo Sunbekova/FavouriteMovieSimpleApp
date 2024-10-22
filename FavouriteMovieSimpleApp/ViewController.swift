@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.register(TableViewCell.nib(), forCellReuseIdentifier: TableViewCell.identifier)
         
     }
 
@@ -36,9 +37,14 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for: indexPath) as! TableViewCell
+        
         let titleArray = Array(movies.keys)
-        cell.textLabel?.text = titleArray[indexPath.row]
+        let yearArray = Array(movies.values)
+        
+        cell.movieTitle.text = titleArray[indexPath.row]
+        cell.movieYear.text = String(yearArray[indexPath.row])
+        return cell
     }
     
     
