@@ -16,7 +16,7 @@ class ViewController: UIViewController {
                                  "Tomris":2019,
                                  "Kurmanjan Datka": 2014,
                                  "Qazaq Handygy. Altyn Taq": 2019,
-                                 "Code Geass Lelouch of the Rebellion": 2017,
+                                 "Code Geass Lelouch of the Re;surrection": 2019,
                                  "Barbie": 2023,
                                  "Made in Abyss: Dawn of the Deep Soul": 2020]
 
@@ -43,6 +43,42 @@ extension ViewController: UITableViewDataSource {
         let yearArray = Array(movies.values)
         
         cell.movieTitle.text = titleArray[indexPath.row]
+        switch cell.movieTitle.text {
+        case "Gentlemen Prefer Blondes":
+            cell.movieImage.image = UIImage.gentlemen
+            cell.movieGenre.text = "Musical Comedy"
+        case "Barbie":
+            cell.movieImage.image = UIImage.barbie
+            cell.movieGenre.text = "Fantasy Comedy"
+        case "Code Geass Lelouch of the Re;surrection":
+            cell.movieImage.image = UIImage.codeGeass
+            cell.movieGenre.text = "Science Fantasy"
+        case "The Prince of Egypt":
+            cell.movieImage.image = UIImage.prince
+            cell.movieGenre.text = "Musical Drama"
+        case "Warriors of the Steppe - Myn Bala":
+            cell.movieImage.image = UIImage.mynBala
+            cell.movieGenre.text = "Historical Drama"
+        case "Tomris":
+            cell.movieImage.image = UIImage.tomris
+            cell.movieGenre.text = "Historical Thriler"
+        case "Qazaq Handygy. Altyn Taq":
+            cell.movieImage.image = UIImage.altynTaq
+            cell.movieGenre.text = "Historical Thriler"
+        case "Kurmanjan Datka":
+            cell.movieImage.image = UIImage.курманжанДатка
+            cell.movieGenre.text = "Historical Drama"
+        case "Made in Abyss: Dawn of the Deep Soul":
+            cell.movieImage.image = UIImage.abyss
+            cell.movieGenre.text = "Dark Fantasy"
+        case "Silent Voice":
+            cell.movieImage.image = UIImage.voice
+            cell.movieGenre.text = "Drama"
+        default:
+            cell.movieImage.image = UIImage.barbie
+            cell.movieGenre.text = "Comedy"
+        }
+        
         cell.movieYear.text = String(yearArray[indexPath.row])
         return cell
     }
