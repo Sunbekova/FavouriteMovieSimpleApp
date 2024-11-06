@@ -13,6 +13,8 @@
 		1995CFC62CDA8A540060D906 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1995CFC52CDA8A540060D906 /* Base */; };
 		1995CFC82CDA8A560060D906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1995CFC72CDA8A560060D906 /* Assets.xcassets */; };
 		1995CFCB2CDA8A560060D906 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1995CFCA2CDA8A560060D906 /* Base */; };
+		1995CFD32CDA8C820060D906 /* itemMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1995CFD22CDA8C820060D906 /* itemMovie.swift */; };
+		1995CFD52CDA905A0060D906 /* itemMovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1995CFD42CDA905A0060D906 /* itemMovieList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1995CFC72CDA8A560060D906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1995CFCA2CDA8A560060D906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1995CFCC2CDA8A560060D906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1995CFD22CDA8C820060D906 /* itemMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemMovie.swift; sourceTree = "<group>"; };
+		1995CFD42CDA905A0060D906 /* itemMovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemMovieList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				1995CFBE2CDA8A540060D906 /* AppDelegate.swift */,
 				1995CFC02CDA8A540060D906 /* SceneDelegate.swift */,
 				1995CFC22CDA8A540060D906 /* ViewController.swift */,
+				1995CFD22CDA8C820060D906 /* itemMovie.swift */,
+				1995CFD42CDA905A0060D906 /* itemMovieList.swift */,
 				1995CFC42CDA8A540060D906 /* Main.storyboard */,
 				1995CFC72CDA8A560060D906 /* Assets.xcassets */,
 				1995CFC92CDA8A560060D906 /* LaunchScreen.storyboard */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1995CFC32CDA8A540060D906 /* ViewController.swift in Sources */,
+				1995CFD52CDA905A0060D906 /* itemMovieList.swift in Sources */,
+				1995CFD32CDA8C820060D906 /* itemMovie.swift in Sources */,
 				1995CFBF2CDA8A540060D906 /* AppDelegate.swift in Sources */,
 				1995CFC12CDA8A540060D906 /* SceneDelegate.swift in Sources */,
 			);

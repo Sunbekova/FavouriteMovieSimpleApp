@@ -13,4 +13,5 @@ struct Movie {
     let year: Int
     let image: UIImage
     let genre: String
+    let description: String
 }
